@@ -10,6 +10,12 @@ type Position struct {
 	chessColumn string
 }
 
+func NewPosition(row int, column int) *Position {
+	position := new(Position)
+	position.SetBoardPosition(row, column)
+	return position
+}
+
 func (position *Position) SetBoardPosition(row int, column int) {
 	position.row = row
 	position.column = column
