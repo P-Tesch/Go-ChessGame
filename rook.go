@@ -94,3 +94,11 @@ func (rook *Rook) IsSameTeam(piece Piece) bool {
 func (rook *Rook) Color() Color {
 	return *rook.color
 }
+
+func (rook *Rook) ToString() string {
+	if rook.Color().isWhite() {
+		return "R"
+	} else {
+		return "r"
+	}
+}

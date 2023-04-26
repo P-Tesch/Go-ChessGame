@@ -6,4 +6,5 @@ type Piece interface {
 	Position() Position
 	Color() Color
 	IsSameTeam(piece Piece) bool
+	ToString() string
 }
